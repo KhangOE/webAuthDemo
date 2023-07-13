@@ -1,0 +1,104 @@
+D:\my work\cl\web authentication\obj\Debug\net6.0\web authentication.csproj.AssemblyReference.cache
+D:\my work\cl\web authentication\obj\Debug\net6.0\web authentication.GeneratedMSBuildEditorConfig.editorconfig
+D:\my work\cl\web authentication\obj\Debug\net6.0\web authentication.AssemblyInfoInputs.cache
+D:\my work\cl\web authentication\obj\Debug\net6.0\web authentication.AssemblyInfo.cs
+D:\my work\cl\web authentication\obj\Debug\net6.0\web authentication.csproj.CoreCompileInputs.cache
+D:\my work\cl\web authentication\obj\Debug\net6.0\web authentication.MvcApplicationPartsAssemblyInfo.cs
+D:\my work\cl\web authentication\obj\Debug\net6.0\web authentication.MvcApplicationPartsAssemblyInfo.cache
+D:\my work\cl\web authentication\bin\Debug\net6.0\appsettings.Development.json
+D:\my work\cl\web authentication\bin\Debug\net6.0\appsettings.json
+D:\my work\cl\web authentication\bin\Debug\net6.0\web authentication.staticwebassets.runtime.json
+D:\my work\cl\web authentication\bin\Debug\net6.0\web authentication.exe
+D:\my work\cl\web authentication\bin\Debug\net6.0\web authentication.deps.json
+D:\my work\cl\web authentication\bin\Debug\net6.0\web authentication.runtimeconfig.json
+D:\my work\cl\web authentication\bin\Debug\net6.0\web authentication.dll
+D:\my work\cl\web authentication\bin\Debug\net6.0\web authentication.pdb
+D:\my work\cl\web authentication\bin\Debug\net6.0\Azure.Core.dll
+D:\my work\cl\web authentication\bin\Debug\net6.0\Azure.Identity.dll
+D:\my work\cl\web authentication\bin\Debug\net6.0\EntityFramework.SqlServer.dll
+D:\my work\cl\web authentication\bin\Debug\net6.0\EntityFramework.dll
+D:\my work\cl\web authentication\bin\Debug\net6.0\Humanizer.dll
+D:\my work\cl\web authentication\bin\Debug\net6.0\Microsoft.AspNet.Identity.Core.dll
+D:\my work\cl\web authentication\bin\Debug\net6.0\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\my work\cl\web authentication\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\my work\cl\web authentication\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\my work\cl\web authentication\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\my work\cl\web authentication\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\my work\cl\web authentication\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\my work\cl\web authentication\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+D:\my work\cl\web authentication\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+D:\my work\cl\web authentication\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\my work\cl\web authentication\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\my work\cl\web authentication\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\my work\cl\web authentication\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\my work\cl\web authentication\bin\Debug\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
+D:\my work\cl\web authentication\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+D:\my work\cl\web authentication\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\my work\cl\web authentication\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+D:\my work\cl\web authentication\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\my work\cl\web authentication\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+D:\my work\cl\web authentication\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
+D:\my work\cl\web authentication\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll
+D:\my work\cl\web authentication\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
+D:\my work\cl\web authentication\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\my work\cl\web authentication\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+D:\my work\cl\web authentication\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+D:\my work\cl\web authentication\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+D:\my work\cl\web authentication\bin\Debug\net6.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\my work\cl\web authentication\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+D:\my work\cl\web authentication\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\my work\cl\web authentication\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+D:\my work\cl\web authentication\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+D:\my work\cl\web authentication\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\my work\cl\web authentication\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+D:\my work\cl\web authentication\bin\Debug\net6.0\Microsoft.OpenApi.dll
+D:\my work\cl\web authentication\bin\Debug\net6.0\Microsoft.SqlServer.Server.dll
+D:\my work\cl\web authentication\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\my work\cl\web authentication\bin\Debug\net6.0\Mono.TextTemplating.dll
+D:\my work\cl\web authentication\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\my work\cl\web authentication\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\my work\cl\web authentication\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\my work\cl\web authentication\bin\Debug\net6.0\System.CodeDom.dll
+D:\my work\cl\web authentication\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+D:\my work\cl\web authentication\bin\Debug\net6.0\System.Data.SqlClient.dll
+D:\my work\cl\web authentication\bin\Debug\net6.0\System.Drawing.Common.dll
+D:\my work\cl\web authentication\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+D:\my work\cl\web authentication\bin\Debug\net6.0\System.Memory.Data.dll
+D:\my work\cl\web authentication\bin\Debug\net6.0\System.Runtime.Caching.dll
+D:\my work\cl\web authentication\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\my work\cl\web authentication\bin\Debug\net6.0\System.Security.Permissions.dll
+D:\my work\cl\web authentication\bin\Debug\net6.0\System.Text.Encodings.Web.dll
+D:\my work\cl\web authentication\bin\Debug\net6.0\System.Text.Json.dll
+D:\my work\cl\web authentication\bin\Debug\net6.0\System.Windows.Extensions.dll
+D:\my work\cl\web authentication\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\my work\cl\web authentication\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\my work\cl\web authentication\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\my work\cl\web authentication\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\my work\cl\web authentication\bin\Debug\net6.0\runtimes\win-arm64\native\sni.dll
+D:\my work\cl\web authentication\bin\Debug\net6.0\runtimes\win-x64\native\sni.dll
+D:\my work\cl\web authentication\bin\Debug\net6.0\runtimes\win-x86\native\sni.dll
+D:\my work\cl\web authentication\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\my work\cl\web authentication\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\my work\cl\web authentication\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+D:\my work\cl\web authentication\obj\Debug\net6.0\staticwebassets\msbuild.web authentication.Microsoft.AspNetCore.StaticWebAssets.props
+D:\my work\cl\web authentication\obj\Debug\net6.0\staticwebassets\msbuild.build.web authentication.props
+D:\my work\cl\web authentication\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.web authentication.props
+D:\my work\cl\web authentication\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.web authentication.props
+D:\my work\cl\web authentication\obj\Debug\net6.0\staticwebassets.pack.json
+D:\my work\cl\web authentication\obj\Debug\net6.0\staticwebassets.build.json
+D:\my work\cl\web authentication\obj\Debug\net6.0\staticwebassets.development.json
+D:\my work\cl\web authentication\obj\Debug\net6.0\scopedcss\bundle\web authentication.styles.css
+D:\my work\cl\web authentication\obj\Debug\net6.0\web authentication.csproj.CopyComplete
+D:\my work\cl\web authentication\obj\Debug\net6.0\web authentication.dll
+D:\my work\cl\web authentication\obj\Debug\net6.0\refint\web authentication.dll
+D:\my work\cl\web authentication\obj\Debug\net6.0\web authentication.pdb
+D:\my work\cl\web authentication\obj\Debug\net6.0\web authentication.genruntimeconfig.cache
+D:\my work\cl\web authentication\obj\Debug\net6.0\ref\web authentication.dll
+D:\my work\cl\web authentication\bin\Debug\net6.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\my work\cl\web authentication\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\my work\cl\web authentication\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\my work\cl\web authentication\bin\Debug\net6.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+D:\my work\cl\web authentication\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+D:\my work\cl\web authentication\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+D:\my work\cl\web authentication\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\my work\cl\web authentication\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
