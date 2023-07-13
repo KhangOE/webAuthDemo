@@ -102,9 +102,9 @@ app.UseAuthentication();
 
 app.UseAuthorization();
 
-app.UseFirstMiddleware();
+//app.UseFirstMiddleware();
 
-app.UseSecondMiddleware();
+//app.UseSecondMiddleware();
 
 //app.UseLoggingMiddlware();
 app.MapControllers();

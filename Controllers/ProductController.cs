@@ -21,11 +21,10 @@ namespace web_authentication.Controllers
             _dataContext = dataContext;
         }
 
-        [UpperAgeRequire(25)]
+        [UpperAgeRequire(20)]
         [HttpGet]
         public async Task<IActionResult> GetUsers()
         {
-            // var products = await _unitOfwork.ProductRepository.GetProducts();
             var product = _dataContext.Products;
             return Ok(product);
         }
@@ -35,7 +34,6 @@ namespace web_authentication.Controllers
         [HttpGet("checkadmin")]
         public async Task<IActionResult> checkAdmin()
         {
-            // var products = await _unitOfwork.ProductRepository.GetProducts();
             var product = _dataContext.Products;
             return Ok(product);
         }
@@ -46,17 +44,22 @@ namespace web_authentication.Controllers
         [HttpGet("checkuser")]
         public async Task<IActionResult> checkUser()
         {
-            // var products = await _unitOfwork.ProductRepository.GetProducts();
             var product = _dataContext.Products;
             return Ok(product);
         }
 
-        //[Authorize(Roles = "user,admin")]
         [AuthorizationNeedAllFilter("admin,user")]
-        [HttpGet("checkUserAdmin")]
-        public async Task<IActionResult> checkUserAdmin()
+        [HttpGet("checkUserandAdmin")]
+        public async Task<IActionResult> checkUserAndAdmin()
         {
-            // var products = await _unitOfwork.ProductRepository.GetProducts();
+            var product = _dataContext.Products;
+            return Ok(product);
+        }
+
+        [Authorize(Roles = "user,admin")]
+        [HttpGet("checkUserOrAdmin")]
+        public async Task<IActionResult> checkUserOrAdmin()
+        {
             var product = _dataContext.Products;
             return Ok(product);
         }
@@ -75,14 +78,14 @@ namespace web_authentication.Controllers
 
         [ServiceFilter(typeof(ValidationExistEntityFilterAttribute<Product>))]
         [ServiceFilter(typeof(ValidationParameterFilterAttrilbute))]
-        [HttpPut]
-        public async Task<IActionResult> Update(int id)
+        [HttpDelete]
+        public async Task<IActionResult> Delete(int id)
         {
             Console.WriteLine("id" + id);
             var entity = HttpContext.Items["entity"] as Product;
          
-            _unitOfwork.ProductRepository.UpdateProduct(entity);
-
+            await _unitOfwork.ProductRepository.Delete(entity);
+            await _unitOfwork.SavechangesAsync();
       
             return Ok();
         }

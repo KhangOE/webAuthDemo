@@ -27,20 +27,16 @@ namespace web_authentication.filter
             }
             var birthday = user.Claims.Where(x => x.Type == ClaimTypes.DateOfBirth).Select(x => x.Value).FirstOrDefault();
             DateTime birthDayDateTime = DateTime.Parse(birthday, null);
-            if(CalculatingAge(birthDayDateTime) < _age)
+            if (CalculatingAge(birthDayDateTime) < _age)
             {
-                context.Result = new ForbidResult();
+                context.Result = new ForbidResult("require " + _age + " +");
                 return;
             }
-           
         }
-
         private int CalculatingAge(DateTime ngaySinh)
         {
             DateTime ngayHienTai = DateTime.Today;
             int tuoi = ngayHienTai.Year - ngaySinh.Year;
-
-            // Kiểm tra nếu chưa đến ngày sinh trong năm hiện tại, giảm tuổi đi 1
             if (ngayHienTai < ngaySinh.AddYears(tuoi))
             {
                 tuoi--;

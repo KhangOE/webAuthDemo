@@ -1,6 +1,4 @@
 ﻿using web_authentication.entities;
-//using DTO.Models;
-//using GenericRepositoryAndUnitofWork.Entities;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
@@ -16,14 +14,18 @@ namespace web_authentication.Repository
     {
         private readonly UserManager<AplicationUser> _userManager;
         private readonly RoleManager<IdentityRole> _roleManager;
+        private IHttpContextAccessor _httpContextAccessor;
         private IConfiguration _configuration;
         private DataContext _dataContext;
 
-        public AuthenticationRepository(DataContext dataContext,IConfiguration configuration,UserManager<AplicationUser> userManager, RoleManager<IdentityRole> roleManager) { 
+        public AuthenticationRepository(
+            IHttpContextAccessor httpContextAccessor,
+            DataContext dataContext,IConfiguration configuration,UserManager<AplicationUser> userManager, RoleManager<IdentityRole> roleManager) { 
                 _userManager = userManager;
                 _roleManager = roleManager;
                 _configuration = configuration;
                _dataContext = dataContext;
+               _httpContextAccessor = httpContextAccessor;
         }
 
         public async Task<string> Login(LoginModel model)
@@ -69,6 +71,7 @@ namespace web_authentication.Repository
             var user = new AplicationUser()
             {
                 Email = model.Email,
+                Name = model.UserName,
                 UserName = model.UserName,
             };
             var createUser = await _userManager.CreateAsync(user,model.Password);
@@ -79,21 +82,28 @@ namespace web_authentication.Repository
 
             foreach(var role in model.Roles)
             {
-                Console.WriteLine("##############################"+role);
+              
                 var addRole = await _userManager.AddToRoleAsync(user, role);
 
                 if (!addRole.Succeeded)
                 {
-                   // throw new Exception(addRole.Errors.ToString());
-                    throw new Exception("add role faled " + addRole.Errors.ToString());
+                    throw new Exception("add" + role +" role failed " + addRole.Errors.ToString());
                 }
             }
             
 
             return true;
-        
-
            
+        }
+
+        public async Task<AplicationUser> GetUserAuth()
+        {
+
+            //var x = User
+           var userName = _httpContextAccessor.HttpContext.User.Claims.Where(x => x.Type == ClaimTypes.Name).Select(x => x.Value).FirstOrDefault();
+            var user = await _userManager.FindByNameAsync(userName);
+            
+            return user;
         }
     }
 }

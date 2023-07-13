@@ -1,9 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
-using System.Diagnostics.Eventing.Reader;
-using System.Security.Principal;
-using web_authentication.Dto;
-using web_authentication.entities;
 
 namespace web_authentication.filter
 {
@@ -36,10 +32,8 @@ namespace web_authentication.filter
                 }
                
             }
-            // throw new NotImplementedException();
             if (!context.ModelState.IsValid)
             {
-                Console.Write("modelstate invalid");
                 context.Result = new BadRequestObjectResult(context.ModelState);
             }
 

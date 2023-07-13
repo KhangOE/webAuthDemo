@@ -15,7 +15,6 @@ namespace web_authentication.filter
         }
         public void OnAuthorization(AuthorizationFilterContext context)
         {
-            //throw new NotImplementedException();
             
             var user = context.HttpContext.User;
 
@@ -27,14 +26,7 @@ namespace web_authentication.filter
             var roleNeeded = _role.Split(',');
 
             var userRole = user.Claims.Where(x => x.Type == ClaimTypes.Role).Select( x => x.Value);
-          /*  foreach( var claim in userRole ) {
-                Console.WriteLine( "user role : " + claim );
-            }
-            foreach (var claim in roleNeeded)
-            {
-                Console.WriteLine("need role : " + claim);
-            }
-            Console.WriteLine("check  " +  !roleNeeded.Except(userRole).Any());*/
+         
             if (roleNeeded.Except(userRole).Any()){
                 context.Result = new ForbidResult();
                 return;

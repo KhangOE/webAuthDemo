@@ -32,5 +32,9 @@ namespace web_authentication.Repository
         {
             _dataContext.Add(product);
         }
+        public async Task Delete(Product product)
+        {
+            _dataContext.Products.Remove(product);
+        }
     }   
 }

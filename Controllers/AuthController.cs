@@ -21,7 +21,6 @@ namespace web_authentication.Controllers
             _roleManager = roleManager;
         }
 
-        [Authorize(Roles = "user")]
         [HttpPost("addRole")]
         public async Task<IActionResult> Addrole([FromQuery] string role)
         {
@@ -40,19 +39,21 @@ namespace web_authentication.Controllers
            
         }
 
+        [HttpGet("getUserAuth")]
+        [Authorize]
+        public async Task<IActionResult> GetUserAuth()
+        {
+            var user = await _unitOfWork.AuthentiCationRepository.GetUserAuth();
+            
+            return Ok(user);
+        }
+
+
         [HttpPost("register")]
         public async Task<IActionResult> Register([FromBody] RegisterModel model)
         {
-           
             try
             {
-                /* var user = new AplicationUser()
-                 {
-                     Email = "user2312313",
-                     Name = "use13",
-                     UserName = "username123"
-                 };
-                 var result = await _userManager.CreateAsync(user,"12312312A!ewrsdf");*/
                 var result = await _unitOfWork.AuthentiCationRepository.Register(model);
                 return Ok(result);
             }
@@ -66,10 +67,16 @@ namespace web_authentication.Controllers
         [HttpPost("login")]
         public async Task<IActionResult> Login([FromBody] LoginModel model)
         {
-            var token = await _unitOfWork.AuthentiCationRepository.Login(model);
-            var user = await _userManager.FindByNameAsync(model.UserName);
-            var checkpass = await _userManager.CheckPasswordAsync(user,model.Password);
-            return Ok(token);
+            try
+            {
+                var token = await _unitOfWork.AuthentiCationRepository.Login(model);
+
+                return Ok(token);
+            }
+            catch
+            {
+                return BadRequest();
+            }
         }
 
     }

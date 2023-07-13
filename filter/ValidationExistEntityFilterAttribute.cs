@@ -19,8 +19,7 @@ namespace web_authentication.filter
             if (context.ActionArguments.ContainsKey("id"))
             {
                 var id = context.ActionArguments["id"];
-          
-                var entity = _dataContext.Set<T>().Find(id) as T;
+                var entity = _dataContext.Set<T>().Find(id);
                 if (entity != null)
                 {
                     context.HttpContext.Items.Add("entity", entity);

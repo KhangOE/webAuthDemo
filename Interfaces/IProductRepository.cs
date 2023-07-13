@@ -11,6 +11,7 @@ namespace web_authentication.Interfaces
 
         Task Create(Product product);
 
+        Task Delete(Product product);
        
     }
 }

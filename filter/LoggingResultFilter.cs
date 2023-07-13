@@ -14,9 +14,6 @@ namespace web_authentication.filter
 
         public void OnResultExecuting(ResultExecutingContext context)
         {
-             //Log the start of the action execution
-            
-           // var isAuthenticate = context.HttpContext.User.Identity.IsAuthenticated;
             var UserName = context.HttpContext.User.Identity.Name;
             Console.WriteLine("user :" + UserName);
             _logger.LogInformation("Action {ActionName} is executing.", context.ActionDescriptor.DisplayName);
